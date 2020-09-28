@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aplicación Angular';
-  personas: String[] = ["Carlos", "July", "Victor", "Alex"];
+  personas: String[] = ["Carlos", "July", "Victor", "Alex", "Daniel", "Jefrey"];
   valido: boolean = true
 }

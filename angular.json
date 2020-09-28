@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "app-primera-angular"
+    }
+  },
+  "defaultProject": "app-primera-angular",
+  "cli": {
+    "analytics": "09af2e79-4c45-4cd5-80e7-416b92b0e761"
+  }
 }

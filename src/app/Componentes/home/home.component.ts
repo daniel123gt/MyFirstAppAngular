@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Persona } from '../../Modelo/persona-data.model';
-import { v4 as uuidv4 } from 'uuid';
+//import { v4 as uuidv4 } from 'uuid';
 import { PersonaService } from '../../Servicios/persona.service'
 @Component({
   selector: 'app-home',
@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     this.PersonaService.addPersonas({
       nombre: newNombre.value,
       edad: newEdad.value,
-      id: uuidv4()
+      id: (Math.random()*10).toString()
     });
     newNombre.value = '';
     newEdad.value = '';

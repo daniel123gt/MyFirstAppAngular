@@ -1,0 +1,95 @@
+.btn-eliminar{
+    border: none;
+    background-color: #f44336 ;
+    cursor: pointer;
+    color: #fff;
+    width: 50px;
+    border-radius: 3px;
+    text-shadow: 0 0 1px #fff;
+    box-shadow: 0 0 2px #f44336;
+}
+
+.modal-confirm {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  .modal-cont {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+  }
+  .modal-header h4{
+    font-size: 24px;
+  }
+  
+  .modal-body {padding: 0 16px;}
+  .modal-body p{
+    font-size: 18px;
+  }
+  .modal-foot {
+    padding: 10px 16px 20px 16px;
+  }
+
+  .modal-foot button{
+      margin-right: 10px;
+  }
+
+  #amigos th{
+      background-color: #546e7a;
+      border: solid 1px #fff;
+      border-radius: none !important;
+      color: #fff;
+      text-align: center;
+  }
+  #amigos td{
+    text-align: center;
+  }
+  #amigos tr:nth-child(even){background-color: #f2f2f2;}
+
+  #amigos tr:hover {background-color: #ddd;}

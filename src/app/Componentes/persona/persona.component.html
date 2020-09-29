@@ -1,0 +1,27 @@
+<h5>Lista de Amigos</h5>
+<table id="amigos">
+    <tr>
+      <th>Nombre</th>
+      <th>Edad</th>
+      <th>Eliminar</th>
+    </tr>
+    <tr *ngFor="let persona of Persona">
+      <td>{{persona.nombre}}</td>
+      <td>{{persona.edad}}</td>
+      <td><button class="btn btn-small red" (click)="deletePersona(persona.id)"><i class="material-icons">delete</i></button></td>
+    </tr>
+  </table>
+  <div id="modalConfirm" class="modal-confirm">
+      <div class="modal-cont">
+          <div class="modal-header">
+            <h4>Eliminar Amigo</h4>
+          </div>
+          <div class="modal-body">
+            <p>¿Estás Seguro de eliminar éste amigo</p>
+          </div>
+          <div class="modal-foot">
+            <button id="btn-confirm" class="btn red"><i class="material-icons right">delete_forever</i>Eliminar</button>
+            <button id="btn-cancel" class="btn blue-grey darken-1"><i class="material-icons right">restore_from_trash</i>Cancelar</button>
+          </div>
+      </div>
+  </div>

@@ -1,5 +1,18 @@
-<h4>Lista de Personas</h4>
-
-<ul *ngIf="valido == true">
-  <li *ngFor="let persona of personas">{{persona}}</li>
-</ul>
+<h5>Agregar nuevo amigo</h5>
+<br>
+<div class="row cardForm">
+    <form class="col s12" (submit) = "agregarAmigo(NombreUsuario, Edad)">
+      <div class="row">
+        <div class="col s12">
+          <label>Nombre del Amigo</label>
+          <input id="first_name" type="text" class="" aria-describedby="ingersar" #NombreUsuario required>
+        </div>
+        <div class="col s12">
+          <br>
+          <label>Edad del Amigo</label>
+          <input id="edad" type="number" class="" aria-describedby="ingersar" #Edad required>
+        </div>
+        <button type="submit" class="btn blue-grey darken-1 btn-agregar">Agregar<i class="material-icons right">add</i></button>
+      </div>
+    </form>
+</div>

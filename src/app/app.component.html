@@ -1,5 +1,12 @@
 <app-navbar></app-navbar>
 <div class="container">
   <h4>Hola! {{title}}</h4>
-  <app-home [valido] = valido [personas] = personas></app-home>  
+  <div class="row">
+    <div class="col s4">
+      <app-home></app-home>   
+    </div>
+    <div class="col s8">
+      <app-lista-persona></app-lista-persona>
+    </div>
+  </div>
 </div>

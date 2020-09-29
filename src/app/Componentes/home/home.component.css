@@ -1,0 +1,24 @@
+.cardForm{
+    background-color: #f8f8f8;
+    margin-right: 30px;
+    padding: 30px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #546e7a5b;
+}
+label{
+    font-size: 16px;
+    color: #263238;
+}
+.btn-agregar{
+    margin-left: 12px;
+    margin-top: 40px;
+}
+input{
+    margin-top: 5px !important;
+    border: none !important;
+    box-shadow: 0 0 2px #263238 !important;
+    border-radius: 3px !important;
+    box-sizing: border-box !important;
+    padding: 0 10px !important;
+    height: 36px !important;
+}
